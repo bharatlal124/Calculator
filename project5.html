@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="pro5.css">
+    </head>
+    <body>
+
+        <h1>Calculator</h1>
+        <p>
+            <form>
+                <b>Value One : </b><input type="text" id="number"
+                    name="input1">
+                <br>
+                <br>
+                <b>Value Two : </b><input type="text" id="numbers"
+                    name="input2">
+
+                <!-- <b>Result Is : </b><input type="text" id="result"> -->
+
+                <br>
+                <br>
+                <!-- <b>Select operation : </b><select name="Select operation"
+                    id="operation">
+                    <option value="Add">Add</option>
+                    <option value="Substract">Substract</option>
+                    <option value="Multiply">Multiply</option>
+                    <option value="divide">divide</option>
+                </select> -->
+                <b>Select operation : </b>
+                <input type="button" value="Add" onclick="return Myfun()">
+                <input type="button" value="Substract" onclick="return
+                    myfun1()">
+                <input type="button" value="Multiply" onclick="return myfun2()">
+                <input type="button" value="divide" onclick="return myfun3()">
+                <input type="reset" value="reset">
+                <input type="submit" value="Submit">
+                <!-- <button id="btn" type="submit" onClick="sumvalues()">Submit</button> -->
+                <!-- <button id="btn" type="reset">Reset</button> -->
+                <br><br>
+                <b>The result is : </b>
+                <input type="text" id="tttx">
+                <input type="text" id="bbb">
+
+                <!-- <span id="result"></span> -->
+            </form>
+
+        </p>
+        <script>
+            function Myfun()
+            {
+                var a=parseInt(document.getElementById('number').value);
+                var b=parseInt(document.getElementById('numbers').value);
+                var result = a+b;
+                document.getElementById("tttx").value=result;
+                // document.getElementById("bbb").value=result;
+                // document.getElementById('result').innerHTML=a+b;
+            }
+            function myfun1()
+            {
+                var a=parseInt(document.getElementById('number').value);
+                var b=parseInt(document.getElementById('numbers').value);
+                var result = a-b;
+                document.getElementById("tttx").value=result;
+                // document.getElementById('result').innerHTML=a-b;
+            }
+            function myfun2()
+            {
+                var a=parseInt(document.getElementById('number').value);
+                var b=parseInt(document.getElementById('numbers').value);
+                var result = a*b;
+                document.getElementById("tttx").value=result;
+                // document.getElementById('result').innerHTML=a*b;
+            }
+            function myfun3()
+            {
+                var a=parseInt(document.getElementById('number').value);
+                var b=parseInt(document.getElementById('numbers').value);
+                var result = a/b;
+                document.getElementById("tttx").value=result;
+                // document.getElementById('result').innerHTML=a/b;
+            }
+
+
+           
+        </script>
+        
+    </body>
+</html>

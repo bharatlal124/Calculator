@@ -1,0 +1,52 @@
+h1{
+    background-color:chocolate;
+    color:black;
+    border: 5px solid gray;
+    padding: 20px;
+    margin: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+   
+}
+form{
+    background-color: chocolate;
+    border: 5px solid gray;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+select{
+    background-color:burlywood;
+    border-radius: 6px;
+    /* padding: 10px;
+    margin: 10px; */
+
+}
+button{
+    background-color:burlywood;
+    border-radius: 6px;
+    
+
+}
+#btn:hover{
+    color: chocolate;
+    background-color: black;
+}
+input{
+    background-color: burlywood;
+    border-radius: 6px;
+    border-style: dotted;
+
+}
+
+body{
+    background-color: darkgoldenrod;
+    position: absolute;
+}
+#bbb{
+    line-height: 100px;
+    position: relative;
+    
+
+}
